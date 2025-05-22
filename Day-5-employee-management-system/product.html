@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>Title</title>
+        <!-- Required meta tags -->
+        <meta charset="utf-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no"
+        />
+
+        <!-- Bootstrap CSS v5.2.1 -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+            crossorigin="anonymous"
+        />
+    </head>
+
+    <body>
+         <header>
+            <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                <div class="container">
+                  <a class="navbar-brand" href="/index.html">Navbar</a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="./add_emp.html">Add Employee Data</a>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Dropdown
+                        </a>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="./add_product.html">Add Product</a></li>
+                          <li><a class="dropdown-item" href="./product.html">Products</a></li>
+                          <li><hr class="dropdown-divider"></li>
+                          <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                      </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+                      <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                  </div>
+                </div>
+              </nav>
+        </header>
+        <main>
+            <section class="products">
+                <div class="container">
+                    <div class="row mt-3">
+                        
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <!-- place footer here -->
+        </footer>
+        <!-- Bootstrap JavaScript Libraries -->
+        <script
+            src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+            crossorigin="anonymous"
+        ></script>
+
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+            integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+            crossorigin="anonymous"
+        ></script>
+
+        <script>
+            let viewData = document.querySelector('.products .row')
+            const products = [
+                    {
+                        name: "Wireless Mouse",
+                        price: 499,
+                        qty: 25,
+                        img_url: "https://rukminim2.flixcart.com/image/416/416/xif0q/mouse/n/i/z/tc-m500-flipkart-smartbuy-original-imahbkfpaeazqdh8.jpeg?q=70&crop=false"
+                    },
+                    {
+                        name: "Bluetooth Speaker",
+                        price: 1199,
+                        qty: 10,
+                        img_url: "https://rukminim2.flixcart.com/image/416/416/xif0q/speaker/mobile-tablet-speaker/9/f/7/groove-infire-original-imahc8muzyrg22cd.jpeg?q=70&crop=false"
+                    },
+                    {
+                        name: "Laptop Stand",
+                        price: 799,
+                        qty: 15,
+                        img_url: "https://rukminim2.flixcart.com/image/416/416/xif0q/laptop-stand/a/l/3/320-aluminum-6-adjustable-foldable-portable-laptop-stand-desktop-original-imaha53ew2yc7nzg.jpeg?q=70&crop=false"
+                    },
+                    {
+                        name: "USB-C Charger",
+                        price: 699,
+                        qty: 30,
+                        img_url: "https://example.com/images/usb-c-charger.jpg"
+                    },
+                    {
+                        name: "Mechanical Keyboard",
+                        price: 2599,
+                        qty: 8,
+                        img_url: "https://example.com/images/mechanical-keyboard.jpg"
+                    },
+                    {
+                        name: "Noise Cancelling Headphones",
+                        price: 3599,
+                        qty: 12,
+                        img_url: "https://example.com/images/noise-cancelling-headphones.jpg"
+                    },
+                    {
+                        name: "Smartwatch",
+                        price: 5499,
+                        qty: 20,
+                        img_url: "https://example.com/images/smartwatch.jpg"
+                    },
+                    {
+                        name: "HD Webcam",
+                        price: 1599,
+                        qty: 18,
+                        img_url: "https://example.com/images/hd-webcam.jpg"
+                    },
+                    {
+                        name: "Portable SSD 1TB",
+                        price: 6499,
+                        qty: 9,
+                        img_url: "https://example.com/images/portable-ssd.jpg"
+                    },
+                    {
+                        name: "Gaming Chair",
+                        price: 8999,
+                        qty: 5,
+                        img_url: "https://example.com/images/gaming-chair.jpg"
+                    }
+                ];
+
+                for(let i=0; i < products.length; i++) {
+                    let col_md_6 = document.createElement('div');
+                    
+                    col_md_6.classList.add('col-md-4')
+                    col_md_6.classList.add('mb-3')
+                    col_md_6.innerHTML = 
+                    `
+                    <div class="card">
+                    <img src=${products[i].img_url} class="card-img-top " style="height:350px" alt=${products[i].name}>
+                    <div class="card-body">
+                        <h5 class="card-title">${products[i].name}</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-primary">Add To Cart</a>
+                    </div>
+                    </div>
+                    `
+                    viewData.appendChild(col_md_6);
+                }
+                console.log(products);
+                
+        </script>
+
+    </body>
+</html>

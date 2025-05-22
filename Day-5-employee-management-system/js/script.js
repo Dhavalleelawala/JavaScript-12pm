@@ -11,6 +11,7 @@ form.addEventListener('submit',(e)=>{
     e.preventDefault();
     
     let emp = {
+        id: Date.now(),
         ename : ename.value,
         salary : salary.value,
         post : post.value,
@@ -18,8 +19,7 @@ form.addEventListener('submit',(e)=>{
     }
 
     employees.push(emp);
-    
-    localStorage.setItem('employees',JSON.stringify(employees));
-    getData();     
+    form.reset(); 
+    localStorage.setItem('employees',JSON.stringify(employees));   
 })
 
